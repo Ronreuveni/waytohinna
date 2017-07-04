@@ -1,0 +1,912 @@
+﻿/**********************FONT*******************************/
+@font-face {
+	font-family: 'coshalavdfusregular-webfont';
+	src: url('../fonts/coshalavdfusregular-webfont.eot') format('embedded-opentype'), url('../fonts/coshalavdfusregular-webfont.ttf') format('truetype'), url('../fonts/coshalavdfusregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* CSS strat here */
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	background-image: url('../images/web inner/background.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Heebo', sans-serif;
+	color: black;
+}
+
+#mainContainer a {
+	color: #C20019;
+}
+
+#mainContainer a:hover {
+	color: #ECA46E;
+}
+	#mainContainer a:focus {
+		color: #ECA46E;
+	}
+
+a:focus {
+	outline: 2px solid;
+	outline-color: blue;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+
+
+
+/***************************  PAGE HEADER **********************************/
+
+
+
+/**************Skip**************/
+
+#skip {
+	background-color: white;
+	z-index: 30;
+	position: absolute;
+	font-weight: 700;
+	font-size: 12pt;
+	/* border-radius: 8px; */
+	/* padding: 6px; */
+	margin-top: 14px;
+	margin-right: 11px;
+}
+
+	#skip a {
+		padding: 2px;
+		position: absolute;
+		top: auto;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+		#skip a:focus {
+			position: static;
+			width: auto;
+			height: auto;
+		}
+/******************************************/
+
+/*WHEN THW WINDOW ZOOMED-IN, CHANGE THIS:*/
+@media screen and (max-width: 1000px) {
+	#logo, #aboutNcontact {
+		/*height: 0px !important;*/
+		margin-top: -110px !important;
+	}
+
+	#headerContainer {
+		margin-top: 0px !important;
+	}
+
+		
+		#mainContainer {
+			margin-top: 20% !important;
+		}
+
+	#blankSpace {
+		min-height: 0px;
+		display: none;
+	}
+
+	#topHeader {
+		height: 0px !important;
+	}
+}
+
+
+
+/**************Top Header**************/
+#topHeader {
+	background-image: url('../images/header.JPG');
+	background-size: cover;
+	height: 60px;
+	width: 100%;
+	margin-top: 0 !important;
+	padding-bottom: 0 !important;
+	-webkit-transition: all 700ms ease-in;
+	-moz-transition: all 700ms ease-in;
+	-ms-transition: all 700ms ease-in;
+	-o-transition: all 700ms ease-in;
+	transition: all 700ms ease-in;
+}
+
+#headerContainer {
+	margin-top: 59px;
+	padding: 0 0 0 0;
+	width: 100%;
+	-webkit-transition: all 700ms ease-in;
+	-moz-transition: all 700ms ease-in;
+	-ms-transition: all 700ms ease-in;
+	-o-transition: all 700ms ease-in;
+	transition: all 700ms ease-in;
+}
+
+#logo {
+	background-image: url(../images/logo.png);
+	width: 100px;
+	height: 70px;
+	position: absolute;
+	background-position: center top;
+	background-size: cover;
+	margin: -70px -4px 0 0;
+	z-index: 1;
+	-webkit-transition: all 700ms ease-in;
+	-moz-transition: all 700ms ease-in;
+	-ms-transition: all 700ms ease-in;
+	-o-transition: all 700ms ease-in;
+	transition: all 700ms ease-in;
+}
+
+#logo a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+#headerContainer p, #headerContainer h1 {
+	margin-top: -30px;
+	float: left;
+	margin-left: 300px;
+	margin-top: -50px;
+	font-family: -webkit-body;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+span {
+	display: inline-block;
+}
+
+/***********Navigation************/
+
+
+#mainNav {
+	font-family: CosHalavDfus, coshalavdfusregular-webfont, Varela Round, Assistant, sans-serif;
+	font-size: 12pt;
+	background-image: -moz-linear-gradient( 90deg, rgb(242,201,161) 0%, rgb(255,207,74) 80%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(242,201,161) 0%, rgb(255,207,74) 80%);
+	background-image: -ms-linear-gradient( 90deg, rgb(242,201,161) 0%, rgb(255,207,74) 80%);
+}
+
+	#mainNav ul li a, #mainNav ul li {
+		padding: 0 !important;
+		text-align: center;
+	}
+
+
+		#mainNav ul li a, #mainNav ul li, #mainNav ul li ul {
+			color: black;
+			-webkit-transition: all 200ms ease-in;
+			-moz-transition: all 200ms ease-in;
+			-ms-transition: all 200ms ease-in;
+			-o-transition: all 200ms ease-in;
+			/* transition: all 200ms ease-in; */
+		}
+
+	#mainNav ul .nav_part a:hover, #mainNav ul .nav_part a:focus , .twoActive, #mainNav ul .nav_part:hover {
+		background-color: #CA8613 !important;
+		color: white;
+	}
+	#mainNav ul .nav_part a:focus, #mainNav ul .nav_part a:focus, .twoActive, #mainNav ul .nav_part:focus {
+		background-color: #CA8613 !important;
+		color: white;
+	}
+
+	#mainNav ul li ul {
+		display: none;
+		font-family: CosHalavDfus, coshalavdfusregular-webfont, Varela Round, Assistant, sans-serif;
+		font-size: 12pt;
+		background-image: -moz-linear-gradient( 90deg, rgb(242,201,161) 0%, rgb(255,207,74) 80%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(242,201,161) 0%, rgb(255,207,74) 80%);
+		background-image: -ms-linear-gradient( 90deg, rgb(242,201,161) 0%, rgb(255,207,74) 80%);
+		-webkit-transition: all 900ms ease-in;
+		-moz-transition: all 900ms ease-in;
+		-ms-transition: all 900ms ease-in;
+		-o-transition: all 900ms ease-in;
+		transition: all 900ms ease-in;
+	}
+
+	#mainNav ul .nav_part ul{
+		-webkit-box-shadow: 0 3px 8px 2px rgba(0,0,0,.2);
+		box-shadow: 0 3px 8px 2px rgba(0,0,0,.2);
+	}
+
+
+	#mainNav ul .nav_part:hover ul {
+		display: block;
+		position: absolute;
+	}
+	#mainNav ul .nav_part:focus ul {
+		display: block;
+		position: absolute;
+	}
+
+	#mainNav ul #nav_two ul li:hover a, #mainNav ul #nav_three ul li:hover a, #mainNav ul #nav_five ul li:hover a {
+		/*background-color: white !important;*/
+	}
+
+	#mainNav ul .nav_part:hover ul {
+		display: block;
+		position: absolute;
+	}
+
+
+
+
+	#mainNav ul .nav_part ul {
+		padding: 0 0 0 0;
+	}
+
+nav ul li ul .showAsDisabled {
+	color: #505050 !important;
+}
+
+
+.oneActive {
+	font-weight: 400;
+}
+
+.notActive {
+	cursor: not-allowed;
+}
+
+/*********************************************   MAIN CONTENT    *******************************************/
+#blankSpace {
+	width: 970px;
+	min-height: 100px;
+	/*float: left;*/
+	-webkit-transition: all 700ms ease-in;
+	-moz-transition: all 700ms ease-in;
+	-ms-transition: all 700ms ease-in;
+	-o-transition: all 700ms ease-in;
+	transition: all 700ms ease-in;
+}
+
+
+/**************Main Container**************/
+
+.container {
+	background-image: url('../images/header.JPG');
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+
+
+#mainContainer {
+	margin-top: -20px;
+	-webkit-transition: all 700ms ease-in;
+	-moz-transition: all 700ms ease-in;
+	-ms-transition: all 700ms ease-in;
+	-o-transition: all 700ms ease-in;
+	transition: all 700ms ease-in;
+	padding-bottom: 18px;
+}
+
+	#mainContainer a:hover {
+		text-decoration: underline !important;
+	}
+
+/**************Pictures Carousel and Main buttom**************/
+
+
+#overCarousel {
+	margin-top: -200px;
+	text-align: center;
+	height: 300px;
+}
+
+
+.mainButtom {
+	background-image: url('../images/web inner/bottom.png');
+	background-position: center top;
+	background-size: cover;
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-position-x: 100px;
+	height: 150px;
+	width: 400px;
+	/*margin: 0 auto;*/
+	padding-top: 10px;
+	color: black;
+	display: block;
+}
+
+.mainButtom div {
+	color: black;
+}
+
+	.mainButtom:hover, .mainButtom:focus {
+		background-image: url('../images/web inner/bottomActive.png');
+		background-position: center top;
+		background-size: cover;
+		background-size: 300px;
+		background-repeat: no-repeat;
+		background-position-x: 100px;
+		height: 150px;
+		width: 400px;
+		/*margin: 0 auto;*/
+		padding-top: 10px;
+		color: black;
+		display: block;
+	}
+
+#myCarousel {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 940px;
+}
+
+
+.mainButtom h2 {
+	font-weight: bold;
+	font-size: 24pt;
+	margin-right: 40px;
+	margin-top: 60px;
+}
+
+.mainButtom h1 {
+	font-size: 24pt;
+	padding: 70px;
+}
+
+
+
+#welcome {
+	background-color: rgba(214, 204, 205,.20);
+	height: 110px;
+	margin: 200px auto;
+	padding-top: 25px;
+	border-radius: 15px 50px 30px;
+}
+
+#welcome h1 {
+	font-size: 24px;
+}
+
+
+
+
+/*************Breadcrumbs:)**************/
+.breadcrumb > li + li:before {
+	color: black;
+	content: ">";
+	font-weight: 400;
+}
+
+#breadcrumb {
+	font-weight: 500;
+	color: black !important;
+	font-size: 12pt;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+	#breadcrumb ol li:first-child {
+		font-weight: 900;
+	}
+
+	#breadcrumb ol li a {
+		color: black !important;
+	}
+
+
+/**************General Stuff**************/
+p {
+	font-weight: 400;
+	color: black !important;
+}
+
+h1 {
+	font-size: 21pt;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 17pt;
+	margin: 0;
+}
+
+h3 {
+	font-size: 14pt;
+}
+
+.Links {
+	float: left;
+	background-color: #CA8613;
+}
+
+	.Links:hover {
+		opacity: 0.9;
+		filter: alpha(opacity=50);
+		background-color: #CA8613;
+	}
+
+/*main links in the home page*/
+
+#link-one {
+	padding-right: 20px;
+}
+
+#link-two {
+	padding-right: 25px;
+}
+
+#link-three {
+	margin-right: 30px;
+}
+
+/**************ABOUT page**************/
+
+#logos {
+	margin-right: 27px;
+}
+
+#logoHIT {
+	width: 180px;
+	height: 145px;
+	margin-right: 20px;
+	border-radius: 15px;
+}
+
+#logos a {
+	font-size: 14pt;
+	/*color:#018287;*/
+}
+
+#logos p {
+	margin-top: 7px;
+}
+
+#creatorsPics {
+	height: 50px;
+	display: inline-block;
+}
+
+
+	#creatorsPics img {
+		border-radius: 10px;
+		height: 130px;
+		width: 130px;
+		display: inline-block;
+	}
+
+#Main-cont {
+	margin-top: 180px;
+}
+
+#map-color a {
+	color: black;
+}
+
+/* ----------------------------------------------
+ אנימציה של תמונות
+ * ---------------------------------------------- */
+
+.shadow-drop-center:hover {
+	-webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-6-30 11:16:28
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-center {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+@keyframes shadow-drop-center {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+
+
+/**************contactUs & SiteMap Pages**************/
+
+#cont-Us {
+	margin: auto 0;
+}
+
+#sitemapa {
+	padding-bottom:50px;
+}
+
+#inner-link1 {
+	padding-right: 60px;
+}
+
+#inner-link2 {
+	padding-right: 80px;
+}
+
+#inner-link3 {
+	padding-right: 100px;
+}
+
+#inner-link4 {
+	padding-right: 60px;
+}
+
+/**************maroco Page**************/
+#sec-one, #sec-four {
+	background-color: white;
+	padding: 50px;
+}
+
+#sec-two {
+	background-color: rgb(255,247,211);
+	padding: 50px;
+}
+
+#sec-three {
+	display: inline-block;
+	-webkit-box-shadow: inset 0 -6px 10px 0 #D6D6D6;
+	box-shadow: inset 0 -6px 10px 0 #D6D6D6;
+	height: 280px;
+}
+
+#sec-one img, #sec-two img, #sec-four img {
+	height: 250px;
+	width: 450px;
+}
+
+/*#sec-four img {
+	height: 250px;
+	width: 450px;
+
+}*/
+
+
+#titleone {
+	margin-left: 10px;
+	padding-right: 25px;
+	padding-top: 60px;
+}
+
+#titleone-border {
+	margin-left: 300px;
+} 
+
+#video {
+	padding-top: 20px;
+	height: 250px;
+	width: 420px;
+	/*margin: 190px;
+	margin-top: 100px;*/
+}
+
+#texto {
+	padding-right: 60px;
+	padding-top: 20px;
+}
+
+#link-maroco {
+	color: white;
+}
+
+#head-maroco {
+	padding-top: 60px;
+	margin-left: 300px;
+}
+
+
+
+/**************ethnic Page**************/
+#marocoPhoto {
+	background-image: url('../images/web inner/ethnic_picone.jpg');
+	background-size: contain;
+}
+
+.Content img {
+	width: 450px;
+	height: 300px;
+}
+
+#decotrion {
+	width: 270px;
+	background-image: url('../images/web inner/Dacortion.png');
+	background-repeat: no-repeat;
+	height: 130px;
+	margin-right: 360px;
+	margin-top: -80px;
+	margin-bottom: 50px;
+}
+
+.vector1 {
+	background-image: url('../images/web inner/vectorOne.png');
+	/*width: 50px;
+	height: 50px;
+	padding: 0 !important;
+	width: 100%;
+	padding-left: 14px;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	text-align: center;*/
+}
+
+#vector1 {
+	background-image: url('../images/web inner/vectorOne.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+#vector2 {
+	background-image: url('../images/web inner/vectorTwo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+#vector3 {
+	background-image: url('../images/web inner/vectoThree.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.round8 {
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+	.round8 h2 {
+		display: inline-block;
+	}
+
+.head h2 {
+	padding-top: 20px;
+}
+
+
+#EthnicImg1 {
+	background-image: url('../images/web inner/ethnic_picone.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+	margin-top: 20px;
+	width: 500px;
+	height: 300px;
+}
+
+#EthnicImg2 {
+	background-image: url('../images/web inner/ethnic_pictwo.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+	margin-top: 20px;
+	width: 500px;
+	height: 300px;
+}
+
+#EthnicImg3 {
+	background-image: url('../images/web inner/ethnic_picThree.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+	margin-top: 20px;
+	width: 500px;
+	height: 300px;
+}
+
+
+
+/*************************** hina planner PAGE ******************************/
+
+
+
+#Pic1 div, #Pic1 div:active {
+	background-image: url('../images/web inner/hinaplanner_picOne.jpeg');
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 15px 1px 100px 5px #909899;
+	box-shadow: 15px 1px 100px 5px #909899;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 450px;
+	height: 220px;
+}
+
+	#Pic2 div, #Pic2 div:active {
+		background-image: url('../images/web inner/hinaplanner_picTwo.bmp');
+		background-repeat: no-repeat;
+		-webkit-box-shadow: 15px 1px 100px 5px #909899;
+		box-shadow: 15px 1px 100px 5px #909899;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 450px;
+		height: 220px;
+	}
+
+
+#Paragraph {
+	width: 600px;
+}
+
+#main-sec-planner {
+	padding-bottom: 100px;
+}
+
+
+
+/* ----------------------------------------------
+ אנימציה של תמונות
+ * ---------------------------------------------- */
+
+.shadow-drop-2-center:hover {
+	-webkit-animation: shadow-drop-2-center 0.4s ease-in both;
+	animation: shadow-drop-2-center 0.4s ease-in both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2017-6-30 11:41:42
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-2-center {
+	0% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		-webkit-transform: translateZ(50px);
+		transform: translateZ(50px);
+		-webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+@keyframes shadow-drop-2-center {
+	0% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		-webkit-transform: translateZ(50px);
+		transform: translateZ(50px);
+		-webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+/*************************** do it yourself - food PAGE ******************************/
+
+#foodImg {
+	background-image: url('../images/web inner/food.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+	margin-top: 20px;
+	width: 500px;
+	height: 300px;
+}
+
+#secfood-one, #secfood-four {
+	background-color: white;
+	padding: 50px;
+}
+
+#secfood-two {
+	background-color: rgb(255,247,211);
+	padding: 50px;
+}
+
+#secfood-three {
+	display: inline-block;
+	-webkit-box-shadow: inset 0 -6px 10px 0 #D6D6D6;
+	box-shadow: inset 0 -6px 10px 0 #D6D6D6;
+	height: 280px;
+}
+
+#secfood-one img, #secfood-two img, #secfood-four img {
+	height: 250px;
+	width: 450px;
+}
+
+
+#titlefood {
+	margin-left: 10px;
+	padding-right: 35px;
+	padding-top: 60px;
+}
+
+#titlefoodone-border {
+	margin-left: 300px;
+}
+
+
+#texto {
+	padding-right: 60px;
+	padding-top: 20px;
+}
+
+#link-food {
+	color: white;
+}
+
+#head-food {
+	padding-top: 60px;
+	margin-left: 300px;
+}
+
+/***************************   FOOTER ******************************/
+footer {
+	z-index: 4;
+	background-color: azure;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+#footerNav {
+	text-align: center;
+	padding-top: 15px;
+	margin-top: -10px;
+	padding-bottom: 23px;
+	background-image: url(../images/footerBG.jpg);
+	background-size: cover;
+}
+
+	#footerNav ul li, #footerNav a {
+		list-style-type: none;
+		text-decoration: none;
+		color: black;
+	}
+
+		#footerNav ul li ul {
+			padding: 0 0 0 0;
+		}
+
+	#footerNav .head {
+		color: #C20019;
+	}
+
+	#footerNav a:hover {
+		text-decoration: underline !important;
+	}
+
+
+
+/*CSS end here!*/
+
+
